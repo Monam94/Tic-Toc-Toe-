@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+    <h1>Tic-Tac-Toe Game</h1>
+    <!-- game -->
+  <div class="gameArea gameAreaHide">
+    <div class="resultField">
+      <div>
+        <span id="playerDisplay" class="playerDisplayOne">
+          Player <span class="displayXO">X</span>
+        </span>
+        <span class="playerOne"></span>
+        <span class="resultPlayerOne">0</span>
+      </div>
+      <div>
+        <span id="playerDisplay" class="playerDisplayTwo">
+          Player <span class="displayXO">O</span>
+        </span>
+        <span class="playerTwo"></span>
+        <span class="resultPlayerTwo">0</span>
+      </div>
+    </div>
+
+    <div class="messageField">
+      <div class="messageFieldInner"></div>
+    </div>
+    <div class="playField">
+      <button id="one" class="firstRow firstColumn diagonalDown"></button>
+      <button id="two" class="firstRow secondColumn"></button>
+      <button id="three" class="firstRow thirdColumn diagonalUp"></button>
+      <button id="four" class="secondRow firstColumn"></button>
+      <button id="five" class="secondRow secondColumn diagonalDown diagonalUp"></button>
+      <button id="six" class="secondRow thirdColumn"></button>
+      <button id="seven" class="thirdRow firstColumn diagonalUp"></button>
+      <button id="eight" class="thirdRow secondColumn"></button>
+      <button id="nine" class="thirdRow thirdColumn diagonalDown"></button>
+    </div>
+
+    <div class="winnerWindow">
+      <span class="winner">WINNER</span>
+      <span class="winnerName">Name Of Winner</span>
+      <button class="playAgain">Play Again</button>
+      <button class="resetGame">Reset Game</button>
+    </div>
+  </div>
+
+  <!-- player  names -->
+  <div class="playerNames">
+    <div class="title">
+      Tic-Tac-Toe
+    </div>
+
+    <form action="/tic-tac-toe">
+      <div>
+        <label for="playerX">&#9587; &nbsp;player name:</label>
+        <input type="text" name="" id="playerX" autofocus>
+      </div>
+      <div>
+        <label for="playerO">&#9711;&nbsp;player name:</label>
+        <input type="text" name="" id="playerO">
+      </div>
+      <button>
+        START THE GAME!
+      </button>
+    </form>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
